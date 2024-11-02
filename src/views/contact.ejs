@@ -1,0 +1,22 @@
+<%- include("partials/header")%>
+
+    <h1>Contact Us</h1>
+    <form action="/sent" method="GET">
+        <label>
+            <span>Name</span>
+            <input type="text" name="name" id="name">
+        </label>
+        <label>
+            <span>Email</span>
+            <input type="email" name="email" id="email">
+        </label>
+        <div>
+            <label>
+                <span>Message</span>
+                <textarea name="message" id="mess" cols="40" rows="10"></textarea>
+            </label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+<%- include("partials/footer")%>
